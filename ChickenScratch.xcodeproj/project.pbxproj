@@ -1,0 +1,514 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		4EAEC28D211B9AE400C1ED0E /* Media.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4EAEC28C211B9AE400C1ED0E /* Media.xcassets */; };
+		4EC5E103211ABB2300AFD980 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EC5E102211ABB2300AFD980 /* AppDelegate.swift */; };
+		4EC5E105211ABB2800AFD980 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4EC5E104211ABB2800AFD980 /* Assets.xcassets */; };
+		4EC5E108211ABB2800AFD980 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4EC5E106211ABB2800AFD980 /* MainMenu.xib */; };
+		4EC5E117211ABB4E00AFD980 /* NotificationCenter.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4EC5E116211ABB4E00AFD980 /* NotificationCenter.framework */; };
+		4EC5E11A211ABB4E00AFD980 /* TodayViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EC5E119211ABB4E00AFD980 /* TodayViewController.swift */; };
+		4EC5E11D211ABB4E00AFD980 /* TodayViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4EC5E11B211ABB4E00AFD980 /* TodayViewController.xib */; };
+		4EC5E121211ABB4E00AFD980 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 4EC5E11F211ABB4E00AFD980 /* InfoPlist.strings */; };
+		4EC5E125211ABB4E00AFD980 /* TextBox.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 4EC5E114211ABB4E00AFD980 /* TextBox.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		4EC5E123211ABB4E00AFD980 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 4EC5E0F7211ABB2300AFD980 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 4EC5E113211ABB4E00AFD980;
+			remoteInfo = TextBox;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		4EC5E129211ABB4E00AFD980 /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				4EC5E125211ABB4E00AFD980 /* TextBox.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		4EAEC28C211B9AE400C1ED0E /* Media.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Media.xcassets; sourceTree = "<group>"; };
+		4EC5E0FF211ABB2300AFD980 /* ChickenScratch.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ChickenScratch.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		4EC5E102211ABB2300AFD980 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		4EC5E104211ABB2800AFD980 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		4EC5E107211ABB2800AFD980 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/MainMenu.xib; sourceTree = "<group>"; };
+		4EC5E109211ABB2800AFD980 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4EC5E10A211ABB2800AFD980 /* ChickenScratch.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = ChickenScratch.entitlements; sourceTree = "<group>"; };
+		4EC5E114211ABB4E00AFD980 /* TextBox.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = TextBox.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		4EC5E116211ABB4E00AFD980 /* NotificationCenter.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = NotificationCenter.framework; path = System/Library/Frameworks/NotificationCenter.framework; sourceTree = SDKROOT; };
+		4EC5E119211ABB4E00AFD980 /* TodayViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodayViewController.swift; sourceTree = "<group>"; };
+		4EC5E11C211ABB4E00AFD980 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/TodayViewController.xib; sourceTree = "<group>"; };
+		4EC5E11E211ABB4E00AFD980 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4EC5E120211ABB4E00AFD980 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		4EC5E122211ABB4E00AFD980 /* TextBox.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = TextBox.entitlements; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		4EC5E0FC211ABB2300AFD980 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4EC5E111211ABB4E00AFD980 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4EC5E117211ABB4E00AFD980 /* NotificationCenter.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		4EC5E0F6211ABB2300AFD980 = {
+			isa = PBXGroup;
+			children = (
+				4EC5E101211ABB2300AFD980 /* ChickenScratch */,
+				4EC5E118211ABB4E00AFD980 /* TextBox */,
+				4EC5E115211ABB4E00AFD980 /* Frameworks */,
+				4EC5E100211ABB2300AFD980 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		4EC5E100211ABB2300AFD980 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				4EC5E0FF211ABB2300AFD980 /* ChickenScratch.app */,
+				4EC5E114211ABB4E00AFD980 /* TextBox.appex */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		4EC5E101211ABB2300AFD980 /* ChickenScratch */ = {
+			isa = PBXGroup;
+			children = (
+				4EC5E102211ABB2300AFD980 /* AppDelegate.swift */,
+				4EC5E104211ABB2800AFD980 /* Assets.xcassets */,
+				4EC5E106211ABB2800AFD980 /* MainMenu.xib */,
+				4EC5E109211ABB2800AFD980 /* Info.plist */,
+				4EC5E10A211ABB2800AFD980 /* ChickenScratch.entitlements */,
+			);
+			path = ChickenScratch;
+			sourceTree = "<group>";
+		};
+		4EC5E115211ABB4E00AFD980 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				4EC5E116211ABB4E00AFD980 /* NotificationCenter.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		4EC5E118211ABB4E00AFD980 /* TextBox */ = {
+			isa = PBXGroup;
+			children = (
+				4EC5E119211ABB4E00AFD980 /* TodayViewController.swift */,
+				4EAEC28C211B9AE400C1ED0E /* Media.xcassets */,
+				4EC5E11B211ABB4E00AFD980 /* TodayViewController.xib */,
+				4EC5E11E211ABB4E00AFD980 /* Info.plist */,
+				4EC5E11F211ABB4E00AFD980 /* InfoPlist.strings */,
+				4EC5E122211ABB4E00AFD980 /* TextBox.entitlements */,
+			);
+			path = TextBox;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		4EC5E0FE211ABB2300AFD980 /* ChickenScratch */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4EC5E10D211ABB2800AFD980 /* Build configuration list for PBXNativeTarget "ChickenScratch" */;
+			buildPhases = (
+				4EC5E0FB211ABB2300AFD980 /* Sources */,
+				4EC5E0FC211ABB2300AFD980 /* Frameworks */,
+				4EC5E0FD211ABB2300AFD980 /* Resources */,
+				4EC5E129211ABB4E00AFD980 /* Embed App Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				4EC5E124211ABB4E00AFD980 /* PBXTargetDependency */,
+			);
+			name = ChickenScratch;
+			productName = ChickenScratch;
+			productReference = 4EC5E0FF211ABB2300AFD980 /* ChickenScratch.app */;
+			productType = "com.apple.product-type.application";
+		};
+		4EC5E113211ABB4E00AFD980 /* TextBox */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4EC5E126211ABB4E00AFD980 /* Build configuration list for PBXNativeTarget "TextBox" */;
+			buildPhases = (
+				4EC5E110211ABB4E00AFD980 /* Sources */,
+				4EC5E111211ABB4E00AFD980 /* Frameworks */,
+				4EC5E112211ABB4E00AFD980 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = TextBox;
+			productName = TextBox;
+			productReference = 4EC5E114211ABB4E00AFD980 /* TextBox.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		4EC5E0F7211ABB2300AFD980 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1000;
+				LastUpgradeCheck = 1000;
+				ORGANIZATIONNAME = "Alexei Baboulevitch";
+				TargetAttributes = {
+					4EC5E0FE211ABB2300AFD980 = {
+						CreatedOnToolsVersion = 10.0;
+					};
+					4EC5E113211ABB4E00AFD980 = {
+						CreatedOnToolsVersion = 10.0;
+					};
+				};
+			};
+			buildConfigurationList = 4EC5E0FA211ABB2300AFD980 /* Build configuration list for PBXProject "ChickenScratch" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 4EC5E0F6211ABB2300AFD980;
+			productRefGroup = 4EC5E100211ABB2300AFD980 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				4EC5E0FE211ABB2300AFD980 /* ChickenScratch */,
+				4EC5E113211ABB4E00AFD980 /* TextBox */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		4EC5E0FD211ABB2300AFD980 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4EC5E105211ABB2800AFD980 /* Assets.xcassets in Resources */,
+				4EC5E108211ABB2800AFD980 /* MainMenu.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4EC5E112211ABB4E00AFD980 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4EC5E11D211ABB4E00AFD980 /* TodayViewController.xib in Resources */,
+				4EAEC28D211B9AE400C1ED0E /* Media.xcassets in Resources */,
+				4EC5E121211ABB4E00AFD980 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		4EC5E0FB211ABB2300AFD980 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4EC5E103211ABB2300AFD980 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4EC5E110211ABB4E00AFD980 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4EC5E11A211ABB4E00AFD980 /* TodayViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		4EC5E124211ABB4E00AFD980 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 4EC5E113211ABB4E00AFD980 /* TextBox */;
+			targetProxy = 4EC5E123211ABB4E00AFD980 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		4EC5E106211ABB2800AFD980 /* MainMenu.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				4EC5E107211ABB2800AFD980 /* Base */,
+			);
+			name = MainMenu.xib;
+			sourceTree = "<group>";
+		};
+		4EC5E11B211ABB4E00AFD980 /* TodayViewController.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				4EC5E11C211ABB4E00AFD980 /* Base */,
+			);
+			name = TodayViewController.xib;
+			sourceTree = "<group>";
+		};
+		4EC5E11F211ABB4E00AFD980 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				4EC5E120211ABB4E00AFD980 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		4EC5E10B211ABB2800AFD980 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "Mac Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.13;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		4EC5E10C211ABB2800AFD980 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "Mac Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.13;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = macosx;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+			};
+			name = Release;
+		};
+		4EC5E10E211ABB2800AFD980 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = ChickenScratch/ChickenScratch.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = R4MX2B96J2;
+				INFOPLIST_FILE = ChickenScratch/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "Alexei-Baboulevitch.ChickenScratch";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+			};
+			name = Debug;
+		};
+		4EC5E10F211ABB2800AFD980 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = ChickenScratch/ChickenScratch.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = R4MX2B96J2;
+				INFOPLIST_FILE = ChickenScratch/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "Alexei-Baboulevitch.ChickenScratch";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+			};
+			name = Release;
+		};
+		4EC5E127211ABB4E00AFD980 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = TextBox/TextBox.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = R4MX2B96J2;
+				INFOPLIST_FILE = TextBox/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@executable_path/../../../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "Alexei-Baboulevitch.ChickenScratch.TextBox";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.2;
+			};
+			name = Debug;
+		};
+		4EC5E128211ABB4E00AFD980 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = TextBox/TextBox.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = R4MX2B96J2;
+				INFOPLIST_FILE = TextBox/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@executable_path/../../../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "Alexei-Baboulevitch.ChickenScratch.TextBox";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.2;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		4EC5E0FA211ABB2300AFD980 /* Build configuration list for PBXProject "ChickenScratch" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4EC5E10B211ABB2800AFD980 /* Debug */,
+				4EC5E10C211ABB2800AFD980 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4EC5E10D211ABB2800AFD980 /* Build configuration list for PBXNativeTarget "ChickenScratch" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4EC5E10E211ABB2800AFD980 /* Debug */,
+				4EC5E10F211ABB2800AFD980 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4EC5E126211ABB4E00AFD980 /* Build configuration list for PBXNativeTarget "TextBox" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4EC5E127211ABB4E00AFD980 /* Debug */,
+				4EC5E128211ABB4E00AFD980 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 4EC5E0F7211ABB2300AFD980 /* Project object */;
+}
